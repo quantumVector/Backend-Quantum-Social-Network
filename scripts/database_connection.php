@@ -1,4 +1,5 @@
 <?php
+
 require_once 'app_config.php';
 
 $link = new mysqli (DATABASE_HOST, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME);
@@ -13,4 +14,5 @@ return $link;
 
 //Закрывает ранее открытое соединение с базой данных
 $link->close();
+
 ?>
